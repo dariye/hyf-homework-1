@@ -1,288 +1,287 @@
-html{
-    font-size: 12px;
+html {
+  font-size: 12px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.logotypes img{
-    width: 25vw;
-}
-
-body>img{
-    width: 100%;
-    height: auto;
+.logotypes img {
+  width: 25vw;
 }
 
-nav{
-    padding: 1.5vh 0 1.5vh 0.5vh;
-    background-color: white;
-   
+body > img {
+  width: 100%;
+  height: auto;
 }
 
-nav ul{
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      line-height: 2.5vh;
+nav {
+  padding: 1.5vh 0 1.5vh 0.5vh;
+  background-color: white;
 }
 
-nav a{
-    font-weight: 500;
-    color:rgb(83, 83, 83);
-    line-height: 1.5rem;
-    font-size: 0.9rem;  
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2.5vh;
 }
 
-a:hover{
-    font-weight: 900;
-    animation-name: nav-animation;
-    animation-fill-mode: forwards;
-    animation-duration: 0.2s;
+nav a {
+  font-weight: 500;
+  color: rgb(83, 83, 83);
+  line-height: 1.5rem;
+  font-size: 0.9rem;
 }
 
-@keyframes nav-animation{
-    100%{
-        position: relative;
-        right: -1rem;
-        color:rgb(184, 5, 5);
-    }
+a:hover {
+  font-weight: 900;
+  animation-name: nav-animation;
+  animation-fill-mode: forwards;
+  animation-duration: 0.2s;
 }
 
-header{
-    padding-bottom: 2.5vh; 
-    background-color:whitesmoke;
+@keyframes nav-animation {
+  100% {
+    position: relative;
+    right: -1rem;
+    color: rgb(184, 5, 5);
+  }
 }
 
-
-h1{
-    margin-bottom: 0;
-    font-weight: 900 ;
+header {
+  padding-bottom: 2.5vh;
+  background-color: whitesmoke;
 }
 
-header div{
-    color: rgb(131, 131, 131);
+h1 {
+  margin-bottom: 0;
+  font-weight: 900;
 }
 
-h1,h2, h3, h4, h5{
-    text-transform: uppercase;
+header div {
+  color: rgb(131, 131, 131);
 }
 
-.container-grid{
-    margin-left:  5vw;
-    margin-right: 3vw;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
 }
 
-.logotypes-container, .practical-container, .industry-container, .gallery-container{
-    margin-top: 8vh;
+.container-grid {
+  margin-left: 5vw;
+  margin-right: 3vw;
 }
 
-.logotypes-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    row-gap: 8vh;
-    margin: 8vh 0;
+.logotypes-container,
+.practical-container,
+.industry-container,
+.gallery-container {
+  margin-top: 8vh;
 }
 
-.logo-img{
-    width: 22vw;
-    height: auto;
+.logotypes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  row-gap: 8vh;
+  margin: 8vh 0;
 }
 
-
-iframe{
-    display: block;
-    margin: 0;
-    max-width: 80vw;
-    max-height: 80vw;
+.logo-img {
+  width: 22vw;
+  height: auto;
 }
 
-h5{
-    font-size: 1.1rem;
+iframe {
+  display: block;
+  margin: 0;
+  max-width: 80vw;
+  max-height: 80vw;
 }
 
+h5 {
+  font-size: 1.1rem;
+}
 
-.bottom-nav{
+.bottom-nav {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: center;
+}
+
+.bottom-nav ul {
+  list-style-type: none;
+}
+
+.bottom-nav li {
+  border-top: rgb(144, 113, 194) 1px solid;
+  margin: 0;
+  line-height: 2.5em;
+}
+
+.bottom-nav li:first-child {
+  border-top: 0px;
+}
+
+h5.bottom-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-nav a {
+  font-weight: 900;
+  color: rgb(56, 53, 53);
+  text-decoration: none;
+}
+
+.purple-bottom {
+  background-color: #6727ca;
+  color: white;
+  padding: 10vh 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.purple-bottom a {
+  color: white;
+}
+
+.purple-bottom p,
+footer p {
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+
+.map-div{
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  footer {
+    order: 4;
+    text-align: center;
+  }
+
+  footer,
+  .map-div,
+  .bottom-nav {
+    margin-top: 10vh;
+  }
+
+  .purple-bottom h5 {
+    margin-bottom: 3vh;
+    text-align: center;
+  }
+
+  .map-div {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+  nav ul {
     display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-    align-items: center ;
-}
+    gap: 5vw;
+  }
 
+  nav ul:first-child {
+    padding-left: 10vw;
+  }
 
-
-.bottom-nav ul{
-    list-style-type: none;
-    
-}
-
-.bottom-nav li{
-    border-top: rgb(144, 113, 194) 1px solid;
-    margin: 0;
-    line-height: 2.5em;
-}
-
-.bottom-nav li:first-child{
-    border-top: 0px;
-}
-
-h5.bottom-nav{
-    margin: 0;
-    padding: 0;
-}
-
-.bottom-nav a{
-    font-weight: 900;
-    color: rgb(56, 53, 53);
+  nav a {
     text-decoration: none;
-}
+  }
 
-.purple-bottom{
-    background-color: #6727CA;
-    color: white;
-    padding: 10vh 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+  header {
+    padding: 6vh 0vw 6vh 10vw;
+  }
 
-.purple-bottom a{
-    color: white;
-}
+  header > div {
+    margin-bottom: 6vh; /*Somehow the padding for the bottom of the header wasnt working so I used this*/
+  }
+  .container-grid {
+    margin: 8vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10vw;
+    grid-row-gap: 10vh;
+  }
+  .industry-container {
+    grid-area: 1/1/2/2;
+    font-size: 0.7rem;
+  }
+  .gallery-container {
+    grid-area: 2/1/3/2;
+    font-size: 0.7rem;
+  }
 
-.purple-bottom p, footer p{
-    line-height: 1.5em;
-    margin-top: 10px;
-}
+  .container-grid h2 {
+    line-height: 1rem; /*otherwise it wasnt aligned with the h3 of the other column*/
+  }
 
-.map-div, footer    {
-    display: block;
-    margin: auto;
-}
+  .logotypes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 4vw;
+    grid-row-gap: 6vw;
+    margin-top: 10vh;
+  }
 
+  .logo-img {
+    max-width: 8vw;
+    height: auto;
+  }
 
+  .container-grid h2,
+  .container-grid h3 {
+    margin-bottom: 5vh;
+  }
 
-@media (max-width: 600px){
-    footer{
-        order: 4;
-    }
+  .container-grid p {
+    color: rgb(131, 131, 131);
+  }
+  .practical-container p {
+    margin-bottom: 3vh;
+    font-size: 0.8rem;
+  }
+  iframe {
+    max-width: 15vw;
+    max-height: 15vw;
+  }
 
-    footer, .map-div, .bottom-nav{
-        margin-top: 10vh;
-    }
+  .purple-bottom {
+    background-color: #6727ca;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: start;
+    column-gap: 8vw;
+  }
+  .purple-bottom h5 {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
 
-    .purple-bottom h5{
-        margin-bottom: 3vh;
-        text-align: center ;
-    }
-
-    .map-div{
-        text-align: center;
-    }
-}
-
-
-
-
-@media (min-width: 992px){
-    html{ 
-         font-size: 20px;
- }
-   nav ul{
-       display: flex;
-       gap: 5vw;
-   }
- 
-   nav ul:first-child{
-       padding-left: 10vw;
-   }
- 
-   nav a{
-       text-decoration: none;
-   }
- 
-   header{
-       padding: 6vh 0vw 6vh 10vw;
-   }
-   
-   header>div{
-       margin-bottom: 6vh; /*Somehow the padding for the bottom of the header wasnt working so I used this*/
-   }
-   .container-grid{
-       margin: 8vw;
-       display: grid;
-       grid-template-columns: 1fr 2fr;
-       grid-template-rows: 1fr 1fr ;
-       grid-column-gap: 10vw;
-       grid-row-gap: 10vh;
-   }
-   .industry-container{
-       grid-area: 1/1/2/2;
-       font-size: 0.7rem;
-   }
-   .gallery-container{
-       grid-area:2/1/3/2;
-       font-size: 0.7rem;
-   }
-
-   .container-grid h2{
-       line-height: 1rem;/*otherwise it wasnt aligned with the h3 of the other column*/
-   }
- 
-   .logotypes-grid{
-       display: grid;
-       grid-template-columns: repeat(4, 1fr);
-       grid-template-rows: repeat(3,1fr);
-       grid-column-gap: 4vw;
-       grid-row-gap: 6vw;
-       margin-top: 10vh;
- 
-   }
- 
-   .logo-img{
-       max-width: 8vw;
-       height: auto;
-   }
- 
-   .container-grid h2, .container-grid h3{
-       margin-bottom: 5vh;
-   }
- 
-   .container-grid p{
-       color:rgb(131, 131, 131);
-   }
-   .practical-container p{
-       margin-bottom: 3vh;
-       font-size: 0.8rem;
-   }
-   iframe{
-       max-width: 15vw;
-       max-height: 15vw;
-   }
- 
-   .purple-bottom{
-     background-color: #6727CA;
-     display: grid;
-     grid-template-columns: repeat(4, 1fr);
-     justify-items: center;
-     align-items: start;
-     column-gap: 8vw;
- 
- }
-   .purple-bottom h5{
-     font-size: 0.9rem;
-     margin-bottom: 15px; 
- }
-
- .logotypes-container, .practical-container, .industry-container, .gallery-container{
+  .logotypes-container,
+  .practical-container,
+  .industry-container,
+  .gallery-container {
     margin-top: 0;
+  }
 }
-
- }
