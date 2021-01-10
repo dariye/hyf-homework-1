@@ -1,3 +1,4 @@
+red
 blue
 white
 yellow
