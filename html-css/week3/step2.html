@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Step 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://via.placeholder.com/80" alt="Company Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="big-container">
+
+        <h1>Sign up to yourcustomtailor.com</h1>
+        <!--Repeat code on the other pages-->
+        <h2>Step 2/4 - How can we reach you?</h2>
+        <div>
+            Progress<br>
+            <div class="progress-bar"><span class="progress-2"></span></div>
+            <!--Progress bar-->
+            <br>
+            <p>We will probably need to stay in touch somehow. Let us know how can we reach you?</p>
+        </div>
+        <form action="step3.html" method="get" id="form">
+            <div class="input-grid">
+                <div class="left-grid">
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="right-grid">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div class="left-grid">
+                    <label for="password">Password*</label>
+                    <input type="password" name="password" id="password" pattern="^[a-zA-Z]+$" required>
+                </div>
+                <div class="left-grid"><label for="password2">Re-enter Password*</label>
+                    <input type="password" name="password2" id="password2" pattern="^[a-zA-Z]+$" required>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="nw-container">
+                I want to sign up for the newsletter:
+                <div class="nw-radio-buttons">
+                    <label for="weekly">Weekly News</label>
+                    <input type="radio" name="nw" id="weekly" value="weekly" required>
+                    <label for="monthly">Monthly News</label>
+                    <input type="radio" name="nw" id="monthly" value="monthly">
+                    <label for="never">Don t send me News</label>
+                    <input type="radio" name="nw" id="never" value="never">
+
+                </div>
+
+
+            </div>
+            <button type="submit" class="submit-button">Next step</button>
+
+
+
+
+        </form>
+
+    </div>
+</body>

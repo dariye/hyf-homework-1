@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #3E2F5B;
+    background-color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #261132;
+}
+
+nav{
+    width: 30vw;
+    height: 80px;
+    background-color: #261132;    
+
+}
+
+nav ul, nav ul li, nav ul li a{
+    height:80px;
+    background-color: #261132; 
+    text-decoration: none;  
+    color: #E0CA3C; 
+}
+nav a:hover{
+    animation-name: nav-animation;
+    animation-fill-mode: forwards;
+    animation-duration: 0.2s;
+}
+
+@keyframes nav-animation{
+    100%{
+        color: #BA5C12;
+        font-weight: 900;
+
+    }
+}
+
+nav ul{
+    line-height: 80px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.progress-bar{
+    height: 20px;
+    width:90%;
+    max-width:  90%;
+    border: 1px solid #3E2F5B;
+    border-radius: 10px;
+}
+
+.progress{
+    display: block;
+    border-radius: 10px;
+    animation-name: progress-animation1;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    background-color: #E0CA3C;
+    height: 20px;
+}
+@keyframes progress-animation1{
+    0%{
+        width: 0;
+    }
+    100%{
+          width: 25%;
+    }
+}
+
+
+.big-container{
+    margin: 50px 10vw;
+}
+
+h1, h2{
+    margin: 24px 0 16px;
+}
+
+p{
+    line-height: 2.5em;
+}
+
+p:last-child{
+    margin-bottom: 40px;
+}
+
+input, label{
+    margin: 24px 0;
+    line-height: 2.5em;
+}
+
+input{
+    width: 20vw;
+    height: 20px;
+    background-color: whitesmoke;
+    border: solid 1px #3E2F5B;
+}
+
+select{
+    width: 80%;
+    height:20px;
+    background-color: whitesmoke ;
+    color: #3E2F5B;
+}
+
+.input-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-end;
+    margin-right: 10vw;
+    column-gap: 5vw;
+}
+
+.right-grid{
+    grid-column: 2/3;
+}
+.left-grid{
+    grid-column: 1/2;
+}
+
+.profile-container{
+    display: flex;
+    margin: 5vh 0;
+    gap: 2vw;;
+}
+
+.profile-description{
+    width: 20%;
+
+}
+
+.text-placeholder{
+    width:65%;
+    height:200px;
+    justify-self: flex-end;
+}
+
+.smaller-text{
+    font-size: 12px;
+    line-height: 0.8em;
+}
+
+.bottom-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#shipping{
+    width: auto;
+    height: auto;
+    margin-left: 8px;
+}
+
+button{
+    color: #261132;
+    background-color: #E0CA3C;
+    border-radius: 10px;
+    height: 50px;
+    width: 80px;
+}
+
+button:hover{
+    animation-name: button-animation;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button-animation{
+    100%{
+        background-color: #BA5C12;
+    }
+}
+
+/*end of step 1*/
+.progress-2{
+
+    display: block;
+    border-radius: 10px;
+    animation-name: progress-animation2;
+    animation-fill-mode: forwards;
+    animation-duration: 6s;
+    background-color: #E0CA3C;
+    height: 20px;
+}
+
+@keyframes progress-animation2{
+    0%{
+        width: 0;
+    }
+    100%{
+          width: 50%;
+    }
+}
+
+input[type="radio"]{
+     margin-left: -6vw;
+}
+
+.submit-button{
+    position: relative;
+    left: 80vw;
+    top: 5vh;
+}
+
+.nw-container{
+    line-height: 4.5em;
+    padding: 5vh 0;
+}
+
+/*end of step 2*/
+
+.progress-3{
+
+    display: block;
+    border-radius: 10px;
+    animation-name: progress-animation3;
+    animation-fill-mode: forwards;
+    animation-duration: 8s;
+    background-color: #E0CA3C;
+    height: 20px;
+}
+
+@keyframes progress-animation3{
+    0%{
+        width: 0;
+    }
+    100%{
+          width: 75%;
+    }
+}
+
+.style-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 8vh;
+    margin: 5vh 0;
+}
+
+input[type='checkbox']{
+    margin: 0 5px;
+    height:20px;
+    width: 20px;
+}
+
+
+.checkbox-margin{
+    column-gap: 15vw;
+    row-gap: 2vh;
+    margin:5vh 25vw 5vh 0;
+}
+
+
+
+    
+
