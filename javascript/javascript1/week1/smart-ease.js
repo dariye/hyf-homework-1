@@ -51,3 +51,5 @@ function nameYourCompany(){
     const startUpName = firstWords[randomNumber] + secondWords[otherRandomNumber];
     return 'The startup: "' + startUpName + '" cointains ' + startUpName.length + ' characters';
 }
+
+nameYourCompany();
