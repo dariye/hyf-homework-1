@@ -1,7 +1,7 @@
 //Excercise 1: ageify
 function ageify(yearOfBirth, yearFuture) {
     let age = yearFuture - yearOfBirth;
-    return "You will be " + age + " years old in " + yearFuture;
+    console.log("You will be " + age + " years old in " + yearFuture)
 }
 
 ageify(1992, 2099);
@@ -11,14 +11,13 @@ ageify(1992, 2099);
 
 function dogAge(dogYearOfBirth, dogYearFuture, shouldResultInDogYears) {
     let dogYear = dogYearFuture - dogYearOfBirth;
-    if (shouldResultInDogYears === false) {        
-        var humanOrDog = " human years old in "
+    if (shouldResultInDogYears === false) {     
+        console.log("Your dog will be " + dogYear + "human years old in " + dogYearFuture)   
+       
     } else {
         dogYear *= 7;
-        var humanOrDog = " dog years old in "
+        console.log("Your dog will be " + dogYear + " dog years old in " + dogYearFuture)
     }
-
-    return "Your dog will be " + dogYear + humanOrDog + dogYearFuture;
 
 }
 
@@ -27,14 +26,14 @@ dogAge(2015, 2025, true);
 
 //Excercise 3: House price stimator
 function housePriceStimator( houseWidth, houseDepth, houseHeight, gardenSizeInM2, housePrice) {
-    var volumeInMeters =  houseWidth * houseHeight * houseDepth;
-    var fairPrice = volumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
+    let volumeInMeters =  houseWidth * houseHeight * houseDepth;
+    let fairPrice = volumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
     if (housePrice === fairPrice) {
-        return "The house price is fair."
+        console.log("The house price is fair.")
     } else if (housePrice > fairPrice) {
-        return "The house price is $" + (housePrice - fairPrice) +  " over market value.";
+        console.log("The house price is $" + (housePrice - fairPrice) +  " over market value.");
     } else {
-        return "The house price is $" + (fairPrice - housePrice) +  " below market value."
+        console.log("The house price is $" + (fairPrice - housePrice) +  " below market value.")
     }
 }
 
@@ -49,7 +48,7 @@ function nameYourCompany(){
     const randomNumber = Math.floor(Math.random() * 10) + 0;
     const otherRandomNumber = Math.floor(Math.random() * 10) + 0;
     const startUpName = firstWords[randomNumber] + secondWords[otherRandomNumber];
-    return 'The startup: "' + startUpName + '" cointains ' + startUpName.length + ' characters';
+    console.log( 'The startup: "' + startUpName + '" cointains ' + startUpName.length + ' characters');
 }
 
 nameYourCompany();
