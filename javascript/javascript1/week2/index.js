@@ -52,19 +52,19 @@ console.log(functionWithTemp);
 
 var class07Students = [];
 function addStudentToClass(studentName) {
-    if(class07Students.includes(studentName) === true){
+    if (class07Students.includes(studentName) === true) {
         alert("Student " + studentName + " is already in the class")
-    }else if(class07Students.includes(studentName) === false && studentName !== "" && class07Students.length<6  || studentName === "Queen Margrethe II of Denmark"){
+    } else if (class07Students.includes(studentName) === false && studentName !== "" && class07Students.length < 6 || studentName === "Queen Margrethe II of Denmark") {
         class07Students.push(studentName);
         alert("Student " + studentName + " succesfully added to class 07")
-    }else if(class07Students.length>=6) {
+    } else if (class07Students.length >= 6) {
         alert("Cannot add more students to class 07")
     }
 }
 
 
 function getNumberOfStudents() {
-    return "There is " + class07Students.length  +" students on this class";
+    return "There is " + class07Students.length + " students on this class";
 
 }
 
