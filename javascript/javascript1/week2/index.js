@@ -54,7 +54,7 @@ var class07Students = [];
 function addStudentToClass(studentName) {
     if (class07Students.includes(studentName) === true) {
         alert("Student " + studentName + " is already in the class")
-    } else if (class07Students.includes(studentName) === false && studentName !== "" && class07Students.length < 6 || studentName === "Queen Margrethe II of Denmark") {
+    } else if (studentName !=== "" && class07Students.length < 6 || studentName === "Queen Margrethe II of Denmark") {
         class07Students.push(studentName);
         alert("Student " + studentName + " succesfully added to class 07")
     } else if (class07Students.length >= 6) {
@@ -70,7 +70,6 @@ function getNumberOfStudents() {
 
 
 //Excercise 5
-
 
 
 
