@@ -110,12 +110,11 @@ function logOutSeriesText(seriesList, lifeSpanInYears) {
         console.log(seriesDurations[i].title + " took " + percentage.toFixed(3) + " of my life");
     }
     let totalPercentage = 0;
-    for (let j = 0; j < percentageArray.length - 1; j++) {
+    for (let j = 0; j < percentageArray.length; j++) {
         totalPercentage += percentageArray[j];
     }
     console.log("In total that is " + totalPercentage.toFixed(2) + " of my life")
 
-    //falta el total de todo en console.loog y redondear los numeros
 
 }
 
@@ -160,12 +159,20 @@ function getNote(id) {
 
 //Smart phone usage app 
 const activities = [];
-function addActivity(date, activity, duration){
-    activities.push({date: date, activity: activity, duration: duration})
+function addActivity(activity, durationInMinutes){
+    let today = new Date();
+    if(typeof  durationInMinutes!== 'number'){
+        console.log("Invalid data: please provide a number in 'durationInMinutes' field ");
+    } else if(typeof activity !== 'string'){
+        console.log("Invalida data:  please provide a string in 'activity' field");
+    }else{
+    activities.push({date: today, activity: activity, duration: durationInMinutes});
+}
 }
 
 
-  addActivity("23/7-18", "Youtube", 30);
+  addActivity("Youtube", 30);
+  addActivity();
   console.log(activities);
 
   function showStatus(act){
