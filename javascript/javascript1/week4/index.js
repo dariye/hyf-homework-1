@@ -81,5 +81,5 @@ console.log(getReply("Remove fishing from my todo"));
 console.log(getReply("What is on my todo?"));
 console.log(getReply("What day is it today?"));
 console.log(getReply("What is 100 * 3"));
-console.log(getReply("Set a timer for 4 minutes"));//I am not sure how to test  this one :/
+console.log(getReply("Set a timer for 4 minutes"));
 console.log(getReply("Who is the most beautiful person in this world?"));
