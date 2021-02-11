@@ -4,7 +4,7 @@ function getReply(command) {
     if (command.includes("Hello my name is") && !yourName) {
         yourName += command.replace("Hello my name is ","");
         return "Nice to meet you " + yourName;
-    } else if (command === "Hello my name is Benjamin" && yourName) {
+    } else if (yourName) {
         return "Yeah I know.. Nice to see you again by the way";
     }
     if (command === "What is my name" && !yourName) {
