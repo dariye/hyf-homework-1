@@ -1,0 +1,31 @@
+body{
+    border: 5px dotted #f4a261;
+    height: 85vh;
+    padding: 5vh 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #e76f51;
+}
+
+h1{
+    text-align : center;
+    
+}
+
+#input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6vh;
+}
+
+
+p{
+    text-align: center;
+    margin-top:8vh;
+}
+
+#printing-area{
+    text-align: center;
+    font-size: 50px;
+}
+
