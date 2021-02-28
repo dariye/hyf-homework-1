@@ -35,8 +35,8 @@ movies.forEach(item =>{
 })
 console.log(moviesContainingRandomWords);
 //7
-moviesContainingRepetedWords = movies.filter(movie => (/\b(\w+)\b.*\b\1\b/gi.test(movie.title)));
-console.log(moviesContainingRepetedWords);
+let moviesContainingRepeatedWords = movies.filter(movie => (/\b(\w+)\b.*\b\1\b/gi.test(movie.title)));
+console.log(moviesContainingRepeatedWords);
 //8
 let sumRating = movies.reduce((a, b) => a + b.rating, 0);
 let averageRating = sumRating / movies.length;
