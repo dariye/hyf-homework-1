@@ -1,0 +1,42 @@
+<head>
+    <title>HyfBay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>HYF Bay</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#myAccount">My account</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>  
+        <div class="filter-container">
+            <input type="search" name="search-filter" placeholder="Search for a product" id="search-filter">
+            <input type="search" name="max-price" id="max-price-filter" placeholder="Max price">
+            <select name="sort-by" id="dropdown" placeholder="sort by">  
+                <option value="0" disabled selected>Sort by</option>              
+                <option value="alphabetic">A-Z</option>
+                <option value="rating">Best rated</option>
+                <option value="low-price">Price(lowest first)</option>
+                <option value="high-price">Price(highest first)</option>
+                
+            </select>
+        </div>
+        <div class="log-in"><a href="#log-in">Log In</a></div>
+    </header>
+  
+    <main>
+        <ul>
+
+        </ul>
+    </main>
+    <script src="hyfBayHelpers.js"></script>
+    <script src="main.js"></script>
+</body>

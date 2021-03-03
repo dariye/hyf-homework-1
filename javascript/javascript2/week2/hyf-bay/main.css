@@ -1,0 +1,97 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #F9FBFD;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1d3557;
+    color: whitesmoke;
+}
+
+div.filter-container{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    font-size: 1.5em;
+}
+
+header a{
+    font-size: 0.8em;
+    color: white;
+}
+
+
+input, select{
+    width: 200px;
+    height: 25px
+}
+
+main ul{
+    margin-top: 6vh ;
+    margin-left: 3vw; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3vw;
+    row-gap: 5vh;
+    justify-items: stretch;
+    justify-content: space-around;
+}
+
+
+div:first-child{
+    margin-left: 3vw;
+    width:20vw;
+}
+
+div:first-child ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+div.log-in{
+    margin-top:2px;
+    width: 80px;
+    height: 50px;
+    background-color:#ffb703;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1vw;
+}
+
+div.log-in:hover{
+    background-color: #fb8500;
+}
+
+.log-in a{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight:900;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height:100%;
+    padding-top:20%
+}
