@@ -1,0 +1,63 @@
+h1{
+    margin-top: 0px     ;
+}
+h1, h3{
+    font-family: "Caveat", cursive, monospace;
+    font-weight: 900;
+    font-size: 80px;
+    text-align: center;
+    color: #2a9d8f;
+}
+
+h3{
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.keys-container{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.keys-container div{
+    width: 50%;
+    height: 60vh;
+    text-align: center;
+    border: 1px solid #252627
+
+}
+
+#s-canvas{
+    position: absolute;
+    left: 0px;
+    top: 270px;
+    width: 50%;
+    
+}
+
+#l-canvas{
+    position: absolute;
+    right: 0px;
+    top: 270px;
+    width: 50%;
+    
+}
+
+p, div{
+    color: #4B88A2;
+    font-weight: 900;
+    font-size: 38px;
+    font-family: "Caveat", cursive, monospace;
+}
+p{
+    margin-block-end: 24px;
+    margin-block-start: 24px;
+}
