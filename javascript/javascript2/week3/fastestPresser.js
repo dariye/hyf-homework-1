@@ -10,7 +10,7 @@ let youWonS = document.querySelector("#s-container h3")
 let youWonL = document.querySelector("#l-container h3")
 
 startButton.addEventListener("click", setTime)
-function setTime() { 
+function setTime() {
     reset();
     if (secondsInput.value >= 1) {
         let timeInMs = secondsInput.value * 1000;
@@ -24,8 +24,7 @@ function counter(event) {
     if (event.key === "s") {
         sCounter++;
         countSLetter.innerHTML = sCounter;
-    }
-    if (event.key === "l") {
+    } else if (event.key === "l") {
         lCounter++;
         countLLetter.innerHTML = lCounter;
     }
@@ -35,18 +34,18 @@ let whoWins = document.createElement("h3");
 whoWins.innerHTML = "Winner"
 
 function winner() {
-    if(sCounter === 0 & lCounter ===0){ 
+    if (sCounter === 0 & lCounter === 0) {
         document.querySelector("#s-container h3").innerHTML = "YOU ARE BOTH LOOSERS!"
-        document.querySelector("#l-container h3").innerHTML = "YOU ARE BOTH LOOSERS!"           
-    }else if (sCounter > lCounter) {
+        document.querySelector("#l-container h3").innerHTML = "YOU ARE BOTH LOOSERS!"
+    } else if (sCounter > lCounter) {
         document.querySelector("#s-container h3").innerHTML = "YOU WON!"
         document.querySelector("#l-container h3").innerHTML = "YOU ARE A LOOSER!"
         confetti("s-canvas")
-    }else if (sCounter < lCounter) {
+    } else if (sCounter < lCounter) {
         document.querySelector("#l-container h3").innerHTML = "YOU WON!"
         document.querySelector("#s-container h3").innerHTML = "YOU ARE A LOOSER!"
         confetti("l-canvas")
-    }else if(sCounter === lCounter){
+    } else {
         document.querySelector("#s-container h3").innerHTML = "YOU BOTH WON!"
         document.querySelector("#l-container h3").innerHTML = "YOU BOTH WON!"
         confetti("l-canvas")
@@ -60,7 +59,7 @@ function confetti(canvasId) {
     confetti.render();
 }
 
-function reset(){    
+function reset() {
     sCounter = 0;
     lCounter = 0;
     youWonL.innerHTML = "";

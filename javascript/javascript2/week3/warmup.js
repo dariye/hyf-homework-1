@@ -44,20 +44,21 @@ logLocationButton.addEventListener("click", function () { navigator.geolocation.
 
 //6 Map
 
-    function createMap(){
+function createMap() {
     var script = document.createElement('script');
     script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA_hBjRUElkOWxKf-dLMJPJ-Gc2dhNxv64&callback=initMap';
     script.async = true;
-    
+
     // Attach your callback function to the `window` object
-    window.initMap = function() { 
+    window.initMap = function () {
         const myLocation = { lat: navigator.geolocation.getCurrentPosition(pos => pos.coords.latitude), lng: navigator.geolocation.getCurrentPosition(pos => pos.coords.longitude) };
-            const map = new google.maps.Map(document.getElementById("map"), {
+        const map = new google.maps.Map(document.getElementById("map"), {
             zoom: 4,
             center: myLocation,
-      // JS API is loaded and available
-    })}
-    
+            // JS API is loaded and available
+        })
+    }
+
     // Append the 'script' element to 'head'
     document.head.appendChild(script);
 }
@@ -80,7 +81,7 @@ window.addEventListener("dblclick", function () { console.log("double click!") }
 function jokeCreator(shouldTellFunnyJoke, logFunnyJoke, logBadJoke) {
     if (typeof shouldTellFunnyJoke === "boolean" && typeof logFunnyJoke === "function" && typeof logBadJoke === "function") {
         shouldTellFunnyJoke ? logFunnyJoke() : logBadJoke();
-    }else{
+    } else {
         console.log("Please provide: a boolean for the first parameter and functions for the 2nd and 3rd ones.")
     }
 }
@@ -90,8 +91,8 @@ function jokeCreator(shouldTellFunnyJoke, logFunnyJoke, logBadJoke) {
 let functionArray = [function () { console.log("This is the first function in the array") }, function () { console.log("This is the second function in the array") }, function () { console.log("This is the the third function in the array") }]
 functionArray.forEach(item => item());
 //2
-const functionAsConstant = function(){console.log("This is functionAsConstant")}
-function normalfunctionDeclaration(){
+const functionAsConstant = function () { console.log("This is functionAsConstant") }
+function normalfunctionDeclaration() {
     console.log("This is normalFunctionDeclaration")
 }
 functionAsConstant();
@@ -102,7 +103,7 @@ let objectWithFunction = {
     number: 1,
     string: "Hola",
     boolean: true,
-    function: function(){console.log("This is a function inside an object")}
+    function: function () { console.log("This is a function inside an object") }
 }
 objectWithFunction.function();
 
