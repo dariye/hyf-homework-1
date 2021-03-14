@@ -1,0 +1,34 @@
+[
+    {
+        "Artist": "Pink Floyd",
+        "Title": "The dark side of the moon",
+        "Year": 1973
+    },
+    {
+        "Artist": "The Doors",
+        "Title": "The Doors",
+        "Year": 1967
+    },
+    {
+        "Artist": "Led Zeppelin",
+        "Title": "Led Zeppelin II",
+        "Year":  1969
+    },
+    {
+        "Artist":"The Jimi Hendrix Experience",
+        "Title":"Are you experienced",
+        "Year": 1967
+    },
+    {
+        "Artist": "Guns n Roses",
+        "Title":"Appetite for destruction",
+        "Year": 1985
+    },
+    {
+        "Artist": "Pink Floyd",
+        "Title": "Animals",
+        "Year": 1977
+    }
+
+
+]

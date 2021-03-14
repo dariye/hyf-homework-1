@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a8dadc;
+    color: #1d3557;
+}
+
+h1{
+    text-align: center;
+}
+.search-div{
+    display: flex;
+    justify-content: center;
+    gap:3px;
+}
+p{
+    font-size: 1.2em;
+    line-height: 2em;
+    margin-left: 30%;
+}
+p b{
+    font-size: 1.3em;
+}
+
+img{
+    width: auto;
+    position: relative;
+    top: 20px;
+
+}
